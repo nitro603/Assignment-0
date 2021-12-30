@@ -2,7 +2,7 @@ function titleCaseEdit(title) {
   // Insert code here;
   let titleEnd = false;
 
-  let upperCaseTitle = "";
+  let upperCaseTitle = "fdsfsfa";
 
   while(!titleEnd){
   
