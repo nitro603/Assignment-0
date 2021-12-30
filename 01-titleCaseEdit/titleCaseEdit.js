@@ -6,7 +6,7 @@ function titleCaseEdit(title) {
 
   while(!titleEnd){
   
-  upperCaseTitle = upperCaseTitle + upperCaseTitle.toUpper(title.charAt(0));
+  upperCaseTitle = upperCaseTitle + title.charAt(0);
   upperCaseTitle.toUpperCase();
   upperCaseTitle = upperCaseTitle + title.substring(1,title.indexOf(" "));    
   title = title.substring(title.indexOf(" "));
