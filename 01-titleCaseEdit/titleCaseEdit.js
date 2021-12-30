@@ -11,7 +11,7 @@ function titleCaseEdit(title) {
   upperCaseTitle = upperCaseTitle + title.substring(1,title.indexOf(" "));    
   title = title.substring(title.indexOf(" "));
 
-    if(title.equals("")){
+    if(title === ""){
       titleEnd = true;
     }
 
