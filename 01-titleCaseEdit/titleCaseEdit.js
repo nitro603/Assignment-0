@@ -2,11 +2,13 @@ function titleCaseEdit(title) {
   // Insert code here;
   let titleEnd = false;
 
-  let upperCaseTitle = ""
+  let upperCaseTitle = "";
 
   while(!titleEnd){
   
-  upperCaseTitle = String.toUpper(title.charAt(0)) + title.substring(1,title.indexOf(" "));    
+  upperCaseTitle = upperCaseTitle + upperCaseTitle.toUpper(title.charAt(0));
+  upperCaseTitle.toUpperCase();
+  upperCaseTitle = upperCaseTitle + title.substring(1,title.indexOf(" "));    
   title = title.substring(title.indexOf(" "));
 
     if(title.equals("")){
