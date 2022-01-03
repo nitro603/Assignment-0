@@ -1,23 +1,12 @@
 function titleCaseEdit(title) {
   // Insert code here;
-  let titleEnd = false;
-
-  let upperCaseTitle = "fdsfsfa";
-
-  while(!titleEnd){
-  
-  upperCaseTitle = upperCaseTitle + title.charAt(0);
-  upperCaseTitle.toUpperCase();
-  upperCaseTitle = upperCaseTitle + title.substring(1,title.indexOf(" "));    
-  title = title.substring(title.indexOf(" "));
-
-    if(title === ""){
-      titleEnd = true;
-    }
-
+  var separateWord = title.toLowerCase().split(" ");
+  for (var i = 0; i < separateWord.length; i++) {
+     separateWord[i] = separateWord[i].charAt(0).toUpperCase() + separateWord[i].substring(1);
   }
-
-  return upperCaseTitle;
+  
+  console.log(separateWord.join(" "));
+  return separateWord.join(" ");
 }
 
 // Do not edit this line;
